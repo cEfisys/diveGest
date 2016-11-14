@@ -1,0 +1,2 @@
+module BoatDocumentsHelper
+end

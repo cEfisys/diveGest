@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Begin date:</strong>
+  <%= @certifications_member.begin_date %>
+</p>
+
+<p>
+  <strong>End date:</strong>
+  <%= @certifications_member.end_date %>
+</p>
+
+<p>
+  <strong>Notes:</strong>
+  <%= @certifications_member.notes %>
+</p>
+
+<%= link_to 'Edit', edit_certifications_member_path(@certifications_member) %> |
+<%= link_to 'Back', certifications_members_path %>

@@ -1,0 +1,2 @@
+module BoatDocumentTypesHelper
+end

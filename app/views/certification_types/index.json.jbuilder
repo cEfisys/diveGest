@@ -1,0 +1,1 @@
+json.array! @certification_types, partial: 'certification_types/certification_type', as: :certification_type

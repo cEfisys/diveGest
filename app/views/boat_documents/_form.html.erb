@@ -1,0 +1,29 @@
+<%= form_for(@boat_document) do |f| %>
+  <% if @boat_document.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@boat_document.errors.count, "error") %> prohibited this boat_document from being saved:</h2>
+
+      <ul>
+      <% @boat_document.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :start_date %><br>
+    <%= f.date_select :start_date %>
+  </div>
+  <div class="field">
+    <%= f.label :end_date %><br>
+    <%= f.date_select :end_date %>
+  </div>
+  <div class="field">
+    <%= f.label :notes %><br>
+    <%= f.text_field :notes %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

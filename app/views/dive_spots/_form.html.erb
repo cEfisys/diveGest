@@ -1,0 +1,41 @@
+<%= form_for(@dive_spot) do |f| %>
+  <% if @dive_spot.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@dive_spot.errors.count, "error") %> prohibited this dive_spot from being saved:</h2>
+
+      <ul>
+      <% @dive_spot.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :max_depth %><br>
+    <%= f.number_field :max_depth %>
+  </div>
+  <div class="field">
+    <%= f.label :min_depth %><br>
+    <%= f.number_field :min_depth %>
+  </div>
+  <div class="field">
+    <%= f.label :sea_life %><br>
+    <%= f.text_field :sea_life %>
+  </div>
+  <div class="field">
+    <%= f.label :coordenads %><br>
+    <%= f.text_field :coordenads %>
+  </div>
+  <div class="field">
+    <%= f.label :notes %><br>
+    <%= f.text_field :notes %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,41 @@
+<%= form_for(@members_client) do |f| %>
+  <% if @members_client.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@members_client.errors.count, "error") %> prohibited this members_client from being saved:</h2>
+
+      <ul>
+      <% @members_client.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :telephone %><br>
+    <%= f.text_field :telephone %>
+  </div>
+  <div class="field">
+    <%= f.label :birth_date %><br>
+    <%= f.date_select :birth_date %>
+  </div>
+  <div class="field">
+    <%= f.label :mail %><br>
+    <%= f.text_field :mail %>
+  </div>
+  <div class="field">
+    <%= f.label :facebook %><br>
+    <%= f.text_field :facebook %>
+  </div>
+  <div class="field">
+    <%= f.label :total_dives %><br>
+    <%= f.number_field :total_dives %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

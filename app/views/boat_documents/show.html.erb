@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Start date:</strong>
+  <%= @boat_document.start_date %>
+</p>
+
+<p>
+  <strong>End date:</strong>
+  <%= @boat_document.end_date %>
+</p>
+
+<p>
+  <strong>Notes:</strong>
+  <%= @boat_document.notes %>
+</p>
+
+<%= link_to 'Edit', edit_boat_document_path(@boat_document) %> |
+<%= link_to 'Back', boat_documents_path %>

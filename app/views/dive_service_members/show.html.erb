@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @dive_service_member.price %>
+</p>
+
+<p>
+  <strong>Payed:</strong>
+  <%= @dive_service_member.payed %>
+</p>
+
+<p>
+  <strong>Notes:</strong>
+  <%= @dive_service_member.notes %>
+</p>
+
+<%= link_to 'Edit', edit_dive_service_member_path(@dive_service_member) %> |
+<%= link_to 'Back', dive_service_members_path %>

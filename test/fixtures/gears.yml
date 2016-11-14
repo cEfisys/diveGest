@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  reference: MyString
+  purchase_date: 2016-09-28
+  sell_date: 2016-09-28
+  notes: MyString
+
+two:
+  reference: MyString
+  purchase_date: 2016-09-28
+  sell_date: 2016-09-28
+  notes: MyString

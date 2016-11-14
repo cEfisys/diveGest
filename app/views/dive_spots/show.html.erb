@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @dive_spot.name %>
+</p>
+
+<p>
+  <strong>Max depth:</strong>
+  <%= @dive_spot.max_depth %>
+</p>
+
+<p>
+  <strong>Min depth:</strong>
+  <%= @dive_spot.min_depth %>
+</p>
+
+<p>
+  <strong>Sea life:</strong>
+  <%= @dive_spot.sea_life %>
+</p>
+
+<p>
+  <strong>Coordenads:</strong>
+  <%= @dive_spot.coordenads %>
+</p>
+
+<p>
+  <strong>Notes:</strong>
+  <%= @dive_spot.notes %>
+</p>
+
+<%= link_to 'Edit', edit_dive_spot_path(@dive_spot) %> |
+<%= link_to 'Back', dive_spots_path %>

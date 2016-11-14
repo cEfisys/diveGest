@@ -1,0 +1,1 @@
+json.partial! "boat_documents/boat_document", boat_document: @boat_document

@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Reference:</strong>
+  <%= @gear.reference %>
+</p>
+
+<p>
+  <strong>Purchase date:</strong>
+  <%= @gear.purchase_date %>
+</p>
+
+<p>
+  <strong>Sell date:</strong>
+  <%= @gear.sell_date %>
+</p>
+
+<p>
+  <strong>Notes:</strong>
+  <%= @gear.notes %>
+</p>
+
+<%= link_to 'Edit', edit_gear_path(@gear) %> |
+<%= link_to 'Back', gears_path %>

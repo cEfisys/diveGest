@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Gear Sizes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @gear_sizes.each do |gear_size| %>
+      <tr>
+        <td><%= gear_size.description %></td>
+        <td><%= link_to 'Show', gear_size %></td>
+        <td><%= link_to 'Edit', edit_gear_size_path(gear_size) %></td>
+        <td><%= link_to 'Destroy', gear_size, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Gear size', new_gear_size_path %>

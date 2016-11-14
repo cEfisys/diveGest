@@ -1,0 +1,21 @@
+<%= form_for(@dive_service_member_gear) do |f| %>
+  <% if @dive_service_member_gear.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@dive_service_member_gear.errors.count, "error") %> prohibited this dive_service_member_gear from being saved:</h2>
+
+      <ul>
+      <% @dive_service_member_gear.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :notes %><br>
+    <%= f.text_field :notes %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

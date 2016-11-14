@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  description: MyString
+  caracteristics: MyString
+  rental_price: 
+
+two:
+  description: MyString
+  caracteristics: MyString
+  rental_price: 

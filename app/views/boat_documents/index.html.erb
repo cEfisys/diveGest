@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Boat Documents</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Start date</th>
+      <th>End date</th>
+      <th>Notes</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @boat_documents.each do |boat_document| %>
+      <tr>
+        <td><%= boat_document.start_date %></td>
+        <td><%= boat_document.end_date %></td>
+        <td><%= boat_document.notes %></td>
+        <td><%= link_to 'Show', boat_document %></td>
+        <td><%= link_to 'Edit', edit_boat_document_path(boat_document) %></td>
+        <td><%= link_to 'Destroy', boat_document, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Boat document', new_boat_document_path %>

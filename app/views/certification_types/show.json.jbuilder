@@ -1,0 +1,1 @@
+json.partial! "certification_types/certification_type", certification_type: @certification_type

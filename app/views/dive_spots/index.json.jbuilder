@@ -1,0 +1,1 @@
+json.array! @dive_spots, partial: 'dive_spots/dive_spot', as: :dive_spot

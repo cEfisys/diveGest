@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @members_client.name %>
+</p>
+
+<p>
+  <strong>Telephone:</strong>
+  <%= @members_client.telephone %>
+</p>
+
+<p>
+  <strong>Birth date:</strong>
+  <%= @members_client.birth_date %>
+</p>
+
+<p>
+  <strong>Mail:</strong>
+  <%= @members_client.mail %>
+</p>
+
+<p>
+  <strong>Facebook:</strong>
+  <%= @members_client.facebook %>
+</p>
+
+<p>
+  <strong>Total dives:</strong>
+  <%= @members_client.total_dives %>
+</p>
+
+<%= link_to 'Edit', edit_members_client_path(@members_client) %> |
+<%= link_to 'Back', members_clients_path %>

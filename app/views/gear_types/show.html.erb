@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @gear_type.description %>
+</p>
+
+<p>
+  <strong>Caracteristics:</strong>
+  <%= @gear_type.caracteristics %>
+</p>
+
+<p>
+  <strong>Rental price:</strong>
+  <%= @gear_type.rental_price %>
+</p>
+
+<%= link_to 'Edit', edit_gear_type_path(@gear_type) %> |
+<%= link_to 'Back', gear_types_path %>

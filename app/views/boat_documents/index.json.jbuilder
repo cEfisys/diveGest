@@ -1,0 +1,1 @@
+json.array! @boat_documents, partial: 'boat_documents/boat_document', as: :boat_document

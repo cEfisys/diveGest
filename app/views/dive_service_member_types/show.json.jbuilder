@@ -1,0 +1,1 @@
+json.partial! "dive_service_member_types/dive_service_member_type", dive_service_member_type: @dive_service_member_type

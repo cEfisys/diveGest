@@ -1,0 +1,2 @@
+module DiveSpotsHelper
+end

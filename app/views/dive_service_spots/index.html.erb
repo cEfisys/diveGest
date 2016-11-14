@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Dive Service Spots</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @dive_service_spots.each do |dive_service_spot| %>
+      <tr>
+        <td><%= link_to 'Show', dive_service_spot %></td>
+        <td><%= link_to 'Edit', edit_dive_service_spot_path(dive_service_spot) %></td>
+        <td><%= link_to 'Destroy', dive_service_spot, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Dive service spot', new_dive_service_spot_path %>

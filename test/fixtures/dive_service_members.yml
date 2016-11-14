@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  price: 
+  payed: false
+  notes: MyString
+
+two:
+  price: 
+  payed: false
+  notes: MyString

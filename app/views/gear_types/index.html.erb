@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Gear Types</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Caracteristics</th>
+      <th>Rental price</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @gear_types.each do |gear_type| %>
+      <tr>
+        <td><%= gear_type.description %></td>
+        <td><%= gear_type.caracteristics %></td>
+        <td><%= gear_type.rental_price %></td>
+        <td><%= link_to 'Show', gear_type %></td>
+        <td><%= link_to 'Edit', edit_gear_type_path(gear_type) %></td>
+        <td><%= link_to 'Destroy', gear_type, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Gear type', new_gear_type_path %>

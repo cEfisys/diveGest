@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Certifications Members</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Begin date</th>
+      <th>End date</th>
+      <th>Notes</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @certifications_members.each do |certifications_member| %>
+      <tr>
+        <td><%= certifications_member.begin_date %></td>
+        <td><%= certifications_member.end_date %></td>
+        <td><%= certifications_member.notes %></td>
+        <td><%= link_to 'Show', certifications_member %></td>
+        <td><%= link_to 'Edit', edit_certifications_member_path(certifications_member) %></td>
+        <td><%= link_to 'Destroy', certifications_member, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Certifications member', new_certifications_member_path %>

@@ -1,0 +1,1 @@
+json.partial! "members_clients/members_client", members_client: @members_client

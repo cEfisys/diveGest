@@ -1,0 +1,1 @@
+json.array! @certifications_members, partial: 'certifications_members/certifications_member', as: :certifications_member

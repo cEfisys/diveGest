@@ -1,0 +1,1 @@
+json.partial! "dive_spots/dive_spot", dive_spot: @dive_spot

@@ -1,0 +1,1 @@
+json.array! @dive_service_member_types, partial: 'dive_service_member_types/dive_service_member_type', as: :dive_service_member_type
